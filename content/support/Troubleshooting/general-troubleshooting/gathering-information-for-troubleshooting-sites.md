@@ -29,7 +29,7 @@ information, and private keys.
 
 You can remove sensitive information from your HAR file by:
 
-- Using a [HAR Sanitizer](https://blog.cloudflare.com/introducing-har-sanitizer-secure-har-sharing/).
+- Using a [HAR Sanitizer](https://har-sanitizer.pages.dev/).
 - Manually removing sensitive information.
 
 {{</Aside>}}
