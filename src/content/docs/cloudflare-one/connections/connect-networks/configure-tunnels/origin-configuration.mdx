@@ -26,6 +26,8 @@ Hostname that `cloudflared` should expect from your origin server certificate. I
 
 Path to the certificate authority (CA) for the certificate of your origin. This option should be used only if your certificate is not signed by Cloudflare.
 
+*Format:* The CA Pool option typically expects a path to a certificate store file or a bundle file in .pem or .crt format. This file should contain one or more trusted root CA certificates. It’s usually not a URL; rather, it’s a local file path where your trusted certificates are stored.
+
 ### noTLSVerify
 
 | Default | UI name       |
