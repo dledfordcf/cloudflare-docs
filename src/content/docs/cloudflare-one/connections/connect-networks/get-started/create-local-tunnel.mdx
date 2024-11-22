@@ -98,6 +98,14 @@ mv /root/cloudflared/cloudflared /usr/bin/cloudflared
 
 ## 2. Authenticate `cloudflared`
 
+Minnimum user permissions needed:
+- Account Scoped Roles > Cloudflare Zero Trust
+- Account Scoped Roles > SSL/TLS, Caching, Performance, Page Rules, and Customization
+- Account Scoped Roles > Load Balancer
+
+Additional permissions needed for **cloudflared tunnel route dns** commands:
+- Account Scoped Roles > DNS
+
 ```sh
 cloudflared tunnel login
 ```
