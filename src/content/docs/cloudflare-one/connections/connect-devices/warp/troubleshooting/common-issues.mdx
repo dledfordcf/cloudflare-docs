@@ -179,3 +179,15 @@ Some applications require traffic to flow either all inside or all outside of th
 1. Determine the IP addresses and/or domains required for your application to function. Common Internet search terms include `<app-name> split tunnel list`, `<app-name> allow list`, or `<app-name> firewall ips`.
 2. In [Zero Trust](https://one.dash.cloudflare.com/), go to your [Split Tunnel settings](/cloudflare-one/connections/connect-devices/warp/configure-warp/route-traffic/split-tunnels/).
 3. Depending on the application, either include or exclude all of the necessary IPs and/or domains. For Microsoft applications, we provide a [one-click action](/cloudflare-one/connections/connect-devices/warp/configure-warp/warp-settings/#directly-route-microsoft-365-traffic) to exclude all Microsoft 365 IPs.
+
+
+
+## Issues with DNS resolution after upgrading to MacOS Sequoia (15.x)
+
+Due to changes in how MacOS handles the built-in firewall, you may experience DNS failures once connecting Warp after installing MacOS Sequoia or even subsequent updates of the same major version (15.0 > 15.1, etc)
+
+#### Solution
+
+Open the firewall settings within MacOS, disable "Block all incoming connections" and ensure "CloudflareWARP" has "Allow incoming connections" enabled.
+
+
